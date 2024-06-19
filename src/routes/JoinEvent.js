@@ -1,19 +1,19 @@
 const express = require("express");
 const router = express.Router();
-const AuthorController = require("../controllers/Author");
+const EventJoinController = require("../controllers/EventJoin");
 
 router.get("/", async (req, res) => {
-    res.send(await AuthorController.GetAuthors())
+    res.send(await EventJoinController.GetEventJoin())
 })
 
 router.post("/", async (req, res) => {
-    const response = await AuthorController.CreateAuthor(req.body);
+    const response = await EventJoinController.CreateEventJoin(req.body);
     res.send(response);
 })
 
 
 router.delete("/", async (req, res) => {
-    const response = await AuthorController.DeleteAuthor(req.body.id);
+    const response = await EventJoinController.DeleteEventJoin(req.body.id);
     res.send(response);
 })
 

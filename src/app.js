@@ -8,11 +8,13 @@ app.use(express.json());
 
 const routes = require('./routes');
 
-app.use("/autores", routes.AuthorRoutes)
+app.use("/UsuarioEvento", routes.UsuarioEventoRoutes)
+app.use("/RegistroEvento", routes.RegistroEventoRoutes)
+app.use("/JoinEvent", routes.JoinEventRoutes)
 
 
 
 
 app.listen(port, () => {
-    console.log("Server Online!")
-})
+    console.log("ABRIENDO FIESTA ROBLOX!")
+}) 
