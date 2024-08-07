@@ -1,6 +1,5 @@
 require("dotenv").config()
 
-<<<<<<< HEAD
 
 const express = require("express")
 const port = process.env.APP_PORT
@@ -42,23 +41,3 @@ app.use("/auth", routes.UserRoutes)
 app.listen(port, () => {
     console.log("Server Online!")
 })
-=======
-const express = require("express")
-const port = process.env.APP_PORT
-const app = express()
-
-app.use(express.json());
-
-const routes = require('./routes');
-
-app.use("/UsuarioEvento", routes.UsuarioEventoRoutes)
-app.use("/RegistroEvento", routes.RegistroEventoRoutes)
-app.use("/JoinEvent", routes.JoinEventRoutes)
-
-
-
-
-app.listen(port, () => {
-    console.log("ABRIENDO FIESTA ROBLOX!")
-}) 
->>>>>>> 995c7105c305559ca91777096b99d58789bcc5ee

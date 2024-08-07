@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
@@ -20,11 +19,6 @@
     "jsonwebtoken": "^9.0.2",
     "passport": "^0.7.0",
     "passport-oauth2": "^1.8.0",
-=======
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "mysql2": "^3.10.1",
->>>>>>> 995c7105c305559ca91777096b99d58789bcc5ee
     "pg": "^8.11.5",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.37.3",
